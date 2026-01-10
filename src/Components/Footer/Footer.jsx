@@ -18,6 +18,9 @@ function Footer() {
                 </span>
                 <div className="footer__section-list-container">
                     <span>
+                        Todos el menú
+                    </span>
+                    <span>
                         Ensaladas de fruta
                     </span>
                     <span>
