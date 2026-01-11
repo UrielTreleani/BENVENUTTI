@@ -8,3 +8,8 @@
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
 }
+
+.screen__header{
+    position: absolute;
+    width: 100%;
+}

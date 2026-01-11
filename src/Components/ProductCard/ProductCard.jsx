@@ -1,12 +1,12 @@
 import productList from "../../data/productsData"
 import "./ProductCard.css"
 
-function ProductCard() {
+function ProductCard({products}) {
 
   return (
     <div className="product-card__container">
       {
-        productList.filter(product => product.category?.includes("destacado")).map(product =>(
+        products.map(product =>(
           <div key={product.id} 
           className="product-card__content">
             <div className="product-card__img">

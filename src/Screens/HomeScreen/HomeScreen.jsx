@@ -7,7 +7,7 @@ import Footer from '../../Components/Footer/Footer'
 function HomeScreen() {
   return (
     <div className='home-screen__container'>
-        <div className='home-screen__header'>
+        <div className='screen__header'>
             <Header/>
         </div>
         <div>

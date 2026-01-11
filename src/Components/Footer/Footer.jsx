@@ -62,7 +62,7 @@ function Footer() {
                 </span>
                 <div className="footer__section-list-container footer__contant-list">
                     <span>
-                        <i class="bi bi-whatsapp"></i>
+                        <i className="bi bi-whatsapp"></i>
                         WhatsApp: 1234567890
                     </span>
                     <span>

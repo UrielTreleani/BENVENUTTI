@@ -39,6 +39,8 @@
     background-color: transparent;
     gap: 10px;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .our-products__button:hover{

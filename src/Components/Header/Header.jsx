@@ -1,15 +1,17 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 import "./Header.css"
 
 function Header() {
     return (
         <div className='header-container'>
-            <div className='header__brand-container'>
-                <img src="/benvenutti-icon.png" alt="helado" className='header__logo'/>
-                <span className='marca'>
-                    Benvenutti
-                </span>
-            </div>
+            <Link className='marca' to={"/"}>
+                <div className='header__brand-container'>
+                    <img src="/benvenutti-icon.png" alt="helado" className='header__logo'/>
+                    <span className="marca">
+                        Benvenutti
+                    </span>
+                </div>
+            </Link>
             <nav className='header__nav'>
                 <div className='header-nav__links'>
                     <a href="">Productos</a>
