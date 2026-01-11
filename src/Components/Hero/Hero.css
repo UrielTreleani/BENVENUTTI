@@ -1,5 +1,5 @@
 .hero-container {
-    height: 95vh;
+    height: 100vh;
     background: linear-gradient(to bottom right,
             rgba(240, 244, 255, 0.3),
             #ffffff,
@@ -9,17 +9,16 @@
 .hero__content{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
-    gap: 80px;
-    padding: 140px 0 80px;
+    height: 100%;   
+    padding: 140px 200px 80px 200px;
 }
 
 .hero__titles-container{
     display: flex;
     flex-direction: column;
-    max-width: 420px;
+    max-width: 450px;
     gap: 24px;
 }
 

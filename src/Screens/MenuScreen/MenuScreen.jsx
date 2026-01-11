@@ -11,6 +11,14 @@ function MenuScreen() {
     <div>
       <div className='screen__header'>
         <Header/>
+        <div>
+          <h2>
+            Nuestro Catálogo
+          </h2>
+        <span>
+          Explorá nuestra variedada para enontrar lo que mas te guste
+        </span>
+        </div>
       </div>
       <ProductCard products={products}/>
       <div>
