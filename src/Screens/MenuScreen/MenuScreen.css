@@ -1,0 +1,9 @@
+.menu-screen__subitlte-container{
+    padding: 100px 200px;
+}
+
+.menu-screen__subitlte-container h2{
+    font-size: 72px;
+    font-family: "Playfair", serif;
+    color: #102239;
+}

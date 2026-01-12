@@ -1,4 +1,3 @@
-import productList from "../../data/productsData"
 import "./ProductCard.css"
 
 function ProductCard({products}) {
@@ -7,8 +6,7 @@ function ProductCard({products}) {
     <div className="product-card__container">
       {
         products.map(product =>(
-          <div key={product.id} 
-          className="product-card__content">
+          <div key={product.id} className="product-card__content">
             <div className="product-card__img">
               <img src={product.img} alt={product.name} />
             </div>
@@ -22,7 +20,7 @@ function ProductCard({products}) {
             </div>  
           </div>
         ))
-      }
+      } 
     </div>
   )
 }

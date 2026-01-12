@@ -1,7 +1,7 @@
 import Hero from '../../Components/Hero/Hero'
 import Header from '../../Components/Header/Header'
 import OurProducts from '../../Components/OurProducts/OurProducts'
-import "./HomeScreen.css"
+import "../ScreenStyles/ScreenStyles.css"
 import Footer from '../../Components/Footer/Footer'
 
 function HomeScreen() {

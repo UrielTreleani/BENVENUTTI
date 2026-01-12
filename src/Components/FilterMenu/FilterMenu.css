@@ -1,0 +1,43 @@
+.filter-menu__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.filter-menu__title{
+    font-size: 28px;
+    font-weight: 700;
+    color: #102239;
+    font-family: "Playfair", serif;
+    margin: 0 0 20px;
+}
+
+
+.filter-menu__categories-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-menu__subtitle{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #102239;
+    margin: 0 0 15px;
+}
+
+.filter-menu__category{
+    display: flex;
+    gap: 10px;
+    margin: 0 0 8px;
+    color: #2b3b50;
+    font-size: 15px;
+}
+
+.filter-menu__price-range-containar{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #102239;
+    margin: 10px 0 10px;
+}

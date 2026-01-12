@@ -6,7 +6,6 @@ function Header() {
         <div className='header-container'>
             <Link className='marca' to={"/"}>
                 <div className='header__brand-container'>
-                    <img src="/benvenutti-icon.png" alt="helado" className='header__logo'/>
                     <span className="marca">
                         Benvenutti
                     </span>
