@@ -1,27 +1,7 @@
 import "./FilterMenu.css"
 import filterList from "../../data/filterData"
-import { useState } from "react"
-import productList from "../../data/productsData"
 
-function FilterMenu() {
-
-    const [selectedCategories, setSelectedCategories] = useState([])
-
-    const handleCategoryChange = (event) => {
-        const value = event.target.value
-
-        setSelectedCategories(prev =>
-            prev.includes(value)
-                ? prev.filter(category => category !== value)
-                : [...prev, value]
-        )
-    }
-
-    const filteredProducts = productList.filter(product =>
-        selectedCategories.includes(
-            product.category
-        )
-    )
+function FilterMenu({selectedCategories, handleCategoryChange}) {
 
     return (
         <div className="filter-menu__container">

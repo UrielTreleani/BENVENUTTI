@@ -12,14 +12,16 @@ function MenuScreen() {
   return (
     <div>
       <div className='screen__header'>
-        <Header/>
-        <div className='menu-screen__subitlte-container'>
-          <h2>
-            Nuestro Catálogo
-          </h2>
-        <span>
-          Explorá nuestra variedada para enontrar lo que mas te guste
-        </span>
+        <div className='menu-screen__header'>
+          <Header/>
+          <div className='menu-screen__subitlte-container'>
+            <h2>
+              Nuestro Catálogo
+            </h2>
+          <span>
+            Explorá nuestra variedada para enontrar lo que mas te guste
+          </span>
+          </div>
         </div>
       </div >
       <div>

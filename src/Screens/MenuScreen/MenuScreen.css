@@ -1,3 +1,10 @@
+.menu-screen__header{
+    background: linear-gradient(to bottom right,
+    rgba(240, 244, 255, 0.3),
+    #ffffff,
+    rgba(0, 86, 214, 0.2));
+}
+
 .menu-screen__subitlte-container{
     padding: 100px 200px;
 }

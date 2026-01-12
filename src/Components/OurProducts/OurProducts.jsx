@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import ProductCard from "../ProductCard/ProductCard"
+import ProductList from "../ProductList/ProductList"
 import "./OurProducts.css"
 import productList from "../../data/productsData"
 
@@ -21,7 +21,7 @@ function OurProducts() {
             </div>
         </div>
         <div className="our-products__products-cards">
-            <ProductCard products={filteredProducts}/>
+            <ProductList products={filteredProducts}/>
         </div>
     </div>
     )

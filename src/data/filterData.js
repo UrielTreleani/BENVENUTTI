@@ -1,13 +1,12 @@
 const filterList = [
-    "Todos los productos", 
+    "Budines",
+    "Dulce",
     "Ensaladas de Fruta",
     "Facturas",
-    "Budines",
     "Panes",
     "Postres",
-    "Viandas",
-    "Dulce",
-    "Salado"
+    "Salado",
+    "Viandas"
 ]
 
 export default filterList

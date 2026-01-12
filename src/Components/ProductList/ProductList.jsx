@@ -1,4 +1,4 @@
-import "./ProductCard.css"
+import "./ProductList.css"
 
 function ProductCard({products}) {
 

@@ -87,7 +87,7 @@ const productList = [
         description: "Budines de...",
         price: "$2500",
         img: "/loaf-cake.jpeg",
-        category: ["destacado", "dulce", "Budines"]
+        category: ["destacado", "dulce", "budines"]
     },
     {
         id: "12",
