@@ -19,7 +19,7 @@ function FilterMenu() {
 
     const filteredProducts = productList.filter(product =>
         selectedCategories.includes(
-            product.category.toLowerCase()
+            product.category
         )
     )
 
