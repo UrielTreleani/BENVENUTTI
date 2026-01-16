@@ -1,6 +1,9 @@
 import "./Footer.css"
 
 function Footer() {
+
+    const mensajeWhatsapp = encodeURIComponent("Hola, quisiera hacer un pedido")
+
   return (
     <div className="footer__container">
         <div className="footer__content">
@@ -9,7 +12,7 @@ function Footer() {
                     Benvenutti
                 </span>
                 <p className="footer__tagline">
-                    Un emprendimiento hecho con amor. Helados artesanales y ensaladas de fruta frescas para alegrar tu día.
+                    Audaces fortuna iuvat
                 </p>
             </div>
             <div className="footer__section">
@@ -18,28 +21,16 @@ function Footer() {
                 </span>
                 <div className="footer__section-list-container">
                     <span>
-                        Todos el menú
-                    </span>
-                    <span>
                         Ensaladas de fruta
-                    </span>
-                    <span>
-                        Panes
                     </span>
                     <span>
                         Postres
                     </span>
                     <span>
-                        Budines
-                    </span>
-                    <span>
                         Viandas
                     </span>
                     <span>
-                        Helados
-                    </span>
-                    <span>
-                        Facturas
+                        Ver menú
                     </span>
                 </div>
             </div>
@@ -60,13 +51,15 @@ function Footer() {
                 <span className="footer__section-title">
                     CONTACTO
                 </span>
-                <div className="footer__section-list-container footer__contant-list">
+                <div className="footer__section-list-container">
                     <span>
+                        <a href={"https://wa.me/5491122634984?text=" + mensajeWhatsapp} target="_blank" className="whatsapp__anchor">
                         <i className="bi bi-whatsapp"></i>
-                        WhatsApp: 1234567890
+                            WhatsApp: +5491122634984
+                        </a>
                     </span>
                     <span>
-                        Email: niideacomoes@gmail.com
+                        Email: benvenutti3010@gmail.com
                     </span>
                     <span>
                         Horarios: Lun-Dom 10am-8pm

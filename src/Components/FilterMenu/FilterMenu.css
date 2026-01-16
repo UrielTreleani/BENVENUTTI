@@ -1,11 +1,11 @@
 .filter-menu__container{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 200px;
 }
 
 .filter-menu__title{
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
     color: #102239;
     font-family: "Playfair", serif;
@@ -35,9 +35,18 @@
 }
 
 .filter-menu__price-range-containar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #102239;
-    margin: 10px 0 10px;
+    margin: 20px 0 10px;
+}
+
+.filter-menu__price-range-slide{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }

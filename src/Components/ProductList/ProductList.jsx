@@ -2,6 +2,9 @@ import "./ProductList.css"
 
 function ProductCard({products}) {
 
+
+
+
   return (
     <div className="product-card__container">
       {
@@ -15,7 +18,7 @@ function ProductCard({products}) {
                 {product.name}
               </p>
               <span>
-                {product.price}
+                ${product.price}
               </span>
             </div>  
           </div>

@@ -1,7 +1,9 @@
 import "./FilterMenu.css"
 import filterList from "../../data/filterData"
+import productList from "../../data/productsData"
 
-function FilterMenu({selectedCategories, handleCategoryChange}) {
+function FilterMenu({selectedCategories, handleCategoryChange, handlePriceChange, value, maxPrice}) {
+
 
     return (
         <div className="filter-menu__container">
@@ -25,11 +27,15 @@ function FilterMenu({selectedCategories, handleCategoryChange}) {
                 <span>
                     RANGO DE PRECIO
                 </span>
-            </div>
-            <div>
-                <span>
-                    ORDENAR POR
-                </span>
+                <div className="filter-menu__price-range-slide">
+                    <span>
+                        $0
+                    </span>
+                    <input type="range" min={0} max={maxPrice} step={5} value={value}  onChange={handlePriceChange}/>
+                    <output>
+                        ${value}
+                    </output>
+                </div>
             </div>
         </div>
     )
