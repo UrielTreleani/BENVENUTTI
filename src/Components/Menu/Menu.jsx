@@ -43,9 +43,6 @@ const filteredProducts =
         )
       )
 
-
-    console.log(value)
-
   return (
     <div className="menu__container">
       <div className="menu__filter-container">

@@ -1,0 +1,36 @@
+.product-screen__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 200px;
+}
+
+.product-screen__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-screen__product-name{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product-screen__product-description{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px 0 0;
+}
+
+.product-screen__product-img-container{
+    width: 580px;
+    height: 600px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.product-screen__product-img-container img{
+    width: 100%;
+    height: 100%;
+}
