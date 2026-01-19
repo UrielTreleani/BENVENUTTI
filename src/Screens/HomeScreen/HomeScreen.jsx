@@ -13,10 +13,10 @@ function HomeScreen() {
         <div>
             <Hero/>
         </div>
-        <div>
+        <div id='products'>
             <OurProducts/>
         </div>
-        <div>
+        <div id="contact">
           <Footer/>
         </div>
     </div>

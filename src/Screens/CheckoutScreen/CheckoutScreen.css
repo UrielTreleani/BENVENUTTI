@@ -1,0 +1,166 @@
+/* =========================
+   CONTAINER
+========================= */
+.checkout-container {
+    min-height: 100vh;
+    padding: 140px 200px 80px;
+    background: linear-gradient(
+        to bottom right,
+        rgba(240, 244, 255, 0.3),
+        #ffffff,
+        rgba(0, 86, 214, 0.15)
+    );
+}
+
+/* =========================
+   TITLE
+========================= */
+.checkout-title {
+    font-family: "Playfair", serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #102139;
+    margin-bottom: 48px;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.checkout-content {
+    display: flex;
+    gap: 48px;
+}
+
+/* =========================
+   FORM
+========================= */
+.checkout-form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* =========================
+   CARD
+========================= */
+.checkout-card {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.checkout-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #102139;
+    margin-bottom: 24px;
+}
+
+/* =========================
+   FIELDS
+========================= */
+.checkout-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.checkout-field label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #5c6b7a;
+}
+
+.checkout-field input {
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #dbe3ec;
+    font-size: 15px;
+}
+
+.checkout-field input:focus {
+    outline: none;
+    border-color: #003d89;
+}
+
+/* =========================
+   ROW
+========================= */
+.checkout-row {
+    display: flex;
+    gap: 16px;
+}
+
+/* =========================
+   PAYMENT
+========================= */
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #102139;
+}
+
+/* =========================
+   SUMMARY
+========================= */
+.checkout-summary {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 24px;
+    height: fit-content;
+    position: sticky;
+    top: 140px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.checkout-summary h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #102139;
+    margin-bottom: 24px;
+}
+
+/* =========================
+   SUMMARY ROWS
+========================= */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: #5c6b7a;
+}
+
+.summary-total {
+    font-size: 20px;
+    font-weight: 800;
+    color: #102139;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.checkout-summary button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background-color: #003d89;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.checkout-summary button:hover {
+    background-color: #002f6b;
+    transform: translateY(-2px);
+}

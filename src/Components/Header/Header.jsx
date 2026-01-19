@@ -13,17 +13,19 @@ function Header() {
             </Link>
             <nav className='header__nav'>
                 <div className='header-nav__links'>
-                    <a href="">Productos</a>
+                    <a href="#products">Productos</a>
                     <a href="">Sobre Mi</a>
-                    <a href="">Contacto</a>
+                    <a href="#contact">Contacto</a>
                 </div>
             </nav>
-            <button className='header__button'>
-                <i className="bi bi-cart"></i>
-                <span>
-                    Carrito
-                </span>
-            </button>
+            <Link to={"/carrito"} className="cart"> 
+                <button className='header__button'>
+                    <i className="bi bi-cart"></i>
+                    <span>
+                        Carrito
+                    </span>
+                </button>
+            </Link>
         </div>
     )
 }

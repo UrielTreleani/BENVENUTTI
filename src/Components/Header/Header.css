@@ -28,6 +28,10 @@
     text-decoration: none;
 }
 
+.cart{
+    text-decoration: none;
+}
+
 .header-nav__links{
     display: flex;
     gap: 40px;

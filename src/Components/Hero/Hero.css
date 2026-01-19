@@ -9,7 +9,8 @@
 .hero__content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 70px;
     align-items: center;
     height: 100%;   
     padding: 140px 200px 80px 200px;
@@ -18,7 +19,7 @@
 .hero__titles-container{
     display: flex;
     flex-direction: column;
-    max-width: 450px;
+    max-width: 500px;
     gap: 24px;
 }
 
