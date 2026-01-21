@@ -9,31 +9,33 @@
 .hero__content{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 70px;
     align-items: center;
     height: 100%;   
-    padding: 140px 200px 80px 200px;
+    padding: 140px 200px 80px;
 }
 
 .hero__titles-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     max-width: 500px;
-    gap: 24px;
+    height: 500px;
+    gap: 30px;
 }
 
-.hero__title {
+.hero__title{
     font-family: "Playfair", serif;
-    font-size: 72px;
+    font-size: 82px;
     font-weight: 800;
     line-height: 1.1;
     color: #102139;
 }
 
-.hero__description {
+.hero__description{
     font-family: "Nunito", sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.6;
     color: #5c6b7a;
     max-width: 520px;
@@ -69,4 +71,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+@media screen and (max-width: 1490px){
+    .hero__content{
+        padding: 140px 100px 80px;
+        gap: 40px;
+    }
 }

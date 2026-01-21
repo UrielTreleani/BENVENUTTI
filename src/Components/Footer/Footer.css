@@ -51,3 +51,8 @@
     gap: 5px;
 }
 
+@media screen and (max-width: 1490px){
+    .footer__container{
+    padding: 0px 100px;
+}
+}
