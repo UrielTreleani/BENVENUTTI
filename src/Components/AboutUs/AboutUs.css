@@ -1,0 +1,53 @@
+.about-us__container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 200px 80px;
+}
+
+.about-us__title{
+    font-size: 48px;
+    font-family: "Playfair", serif;
+    font-weight: 700;
+    color: #102239;
+}
+
+.about-us__description{
+    font-size: 24px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 1750px){
+    .about-us__container{
+        padding: 0 320px 80px;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .about-us__title{
+        font-size: 62px;
+    }
+
+    .about-us__description{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 2200px){
+    .about-us__container{
+        padding: 0 400px 80px;
+    }
+}
+
+
+@media screen and (min-width: 2200px){
+    .about-us__container{
+        padding: 0 530px 80px;
+    }
+}
+
+@media screen and (min-width: 2800px){
+    .about-us__container{
+        padding: 0 650px 80px;
+    }
+}

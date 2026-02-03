@@ -18,6 +18,11 @@
     flex-direction: column;
 }
 
+.checkbox-category{ 
+    accent-color: #3773cb;
+    cursor: pointer;
+}
+
 .filter-menu__subtitle{
     font-size: 14px;
     font-weight: 600;
@@ -48,5 +53,28 @@
 .filter-menu__price-range-slide{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 5px;
+}
+
+.filter-menu__slider{
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 10px;
+    outline: none;
+    background: #3773cb
+}
+
+.filter-menu__slider::-webkit-slider-runnable-track {
+    height: 6px;
+}
+
+.filter-menu__slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #3773cb;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
 }

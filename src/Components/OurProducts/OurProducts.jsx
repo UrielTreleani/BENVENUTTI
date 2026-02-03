@@ -8,7 +8,7 @@ function OurProducts() {
     const filteredProducts = productList.filter(product => (product.category?.includes("destacado")))
 
         return (
-    <div className="our-products__container">
+    <div className="our-products__container" id="products">
         <div className="our-products__header">
             <h2 className="our-products__title">
                 Nuestros Productos

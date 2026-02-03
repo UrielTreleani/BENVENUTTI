@@ -19,21 +19,40 @@
     align-items: center;
     max-width: 100%;
     height: 25px;
-    padding: 0 30px;
+    border: 2px solid;
+    border-radius: 8px;
+    width: fit-content;
+    overflow: hidden;
+    padding: 0 6px 0 0;
 }
 
 .search-bar{
     width: 350px;
     height: 100%;
+    padding: 5px 8px;
+    font-size: 12px;
+    border: none;
+}
+
+.search-bar__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-left: 2px solid;
+    padding: 0 0 0 6px;
 }
 
 .header__nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 500px;
+    align-items: center;    
     height: 80px;
+    gap: 40px;
 }
 
 .header__logo-container{
@@ -85,6 +104,7 @@
     border: 2px solid #cfd8e5;
     background-color: transparent;
     gap: 10px;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -94,21 +114,106 @@
     transition: 0.2s;
 }
 
-@media screen and (max-width: 1490px){
 
+@media screen and (min-width: 1750px){
     .header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 100px;
+        padding: 0 320px;
+    }
+
+    .header__nav{
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .header-nav__links{
+        gap: 30px;
+    }
 }
 
+@media screen and (min-width: 2000px){
+
+    .header__logo-container{
+        height: 55px;
+        width: 55px;
+    }
+
     .marca{
-        font-size: 24px;
+        font-size: 36px;
+    }
+
+    .search-bar__container{
+        height: 30px;
     }
 
     .header-nav__links a{
-        font-size: 14px;
+        font-size: 20px;
+    }
+
+    .header__button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 2200px){
+
+    .header-container{
+        padding: 0 400px;
+    }
+
+    .header__logo-container{
+        height: 62px;
+        width: 62px;
+    }
+
+        .marca{
+        font-size: 42px;
+    }
+    
+    .search-bar__container{
+        height: 32px;
+    }
+
+        .header-nav__links a{
+        font-size: 24px;
+    }
+
+    .header__button{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 2500px){
+
+    .header-container{
+        padding: 0 530px;
+    }
+}
+
+@media screen and (min-width: 2800px){
+
+    .header-container{
+        padding: 0 650px;
+    }
+
+        .header__logo-container{
+        height: 68px;
+        width: 68px;
+    }
+
+        .marca{
+        font-size: 48px;
+    }
+    
+    .search-bar__container{
+        height: 32px;
+    }
+
+        .header-nav__links a{
+        font-size: 28px;
+    }
+
+    .header__button{
+        font-size: 24px;
     }
 }

@@ -5,7 +5,7 @@ function Footer() {
     const mensajeWhatsapp = encodeURIComponent("Hola, quisiera hacer un pedido")
 
   return (
-    <div className="footer__container">
+    <div className="footer__container" id="contact">
         <div className="footer__content">
             <div className="footer__section">
                 <span className="footer__brand">

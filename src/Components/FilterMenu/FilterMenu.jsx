@@ -17,7 +17,7 @@ function FilterMenu({selectedCategories, handleCategoryChange, handlePriceChange
                 {
                     filterList.map(filter => (
                         <label className="filter-menu__category" key={filter}>
-                            <input type="checkbox" value={filter.toLowerCase()} checked={selectedCategories.includes(filter.toLowerCase())} onChange={handleCategoryChange} />
+                            <input type="checkbox" value={filter.toLowerCase()} checked={selectedCategories.includes(filter.toLowerCase())} onChange={handleCategoryChange} className="checkbox-category"/>
                             {filter}
                         </label>
                     ))
@@ -31,7 +31,7 @@ function FilterMenu({selectedCategories, handleCategoryChange, handlePriceChange
                     <span>
                         $0
                     </span>
-                    <input type="range" min={0} max={maxPrice} step={5} value={value}  onChange={handlePriceChange}/>
+                    <input type="range" min={0} max={maxPrice} step={5} value={value}  onChange={handlePriceChange} className="filter-menu__slider"/>
                     <output>
                         ${value}
                     </output>

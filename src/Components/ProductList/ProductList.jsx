@@ -6,29 +6,29 @@ function ProductCard({products}) {
 
 
 
-  return (
-    <div className="product-card__container">
-      {
-        products.map(product =>(
-        <Link to={"/producto/" + product.id} className="product_link">
-            <div key={product.id} className="product-card__content">
-              <div className="product-card__img">
-                <img src={product.img} alt={product.name} />
+    return (
+      <div className="product-card__container">
+        {
+          products.map(product =>(
+          <Link to={"/producto/" + product.id} className="product_link" key={product.id} >
+              <div className="product-card__content">
+                <div className="product-card__img">
+                  <img src={product.img} alt={product.name} />
+                </div>
+                <div className="product-card__title"> 
+                  <p>
+                    {product.name}
+                  </p>
+                  <span>
+                    ${product.price}
+                  </span>
+                </div>  
               </div>
-              <div className="product-card__title"> 
-                <p>
-                  {product.name}
-                </p>
-                <span>
-                  ${product.price}
-                </span>
-              </div>  
-            </div>
-        </Link>
-        ))
-      } 
-    </div>
-  )
-}
+          </Link>
+          ))
+        } 
+      </div>
+    )
+  }
 
-export default ProductCard
+  export default ProductCard

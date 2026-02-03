@@ -15,7 +15,6 @@
 .footer__section{
     display: flex;
     flex-direction: column;
-    max-width: 300px;
     gap: 15px;
 }
 
@@ -26,14 +25,14 @@
 }
 
 .footer__tagline{
-    font-size: 16px;
+    font-size: 18px;
     color: #586475;
 }
 
 .footer__section-list-container{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     font-size: 16px;
     color: #586475;
 }
@@ -51,8 +50,63 @@
     gap: 5px;
 }
 
-@media screen and (max-width: 1490px){
+@media screen and (min-width: 1750px){
     .footer__container{
-    padding: 0px 100px;
+        padding: 0 320px;
+    }
 }
+
+@media screen and (min-width: 2000px){
+    .footer__brand{
+        font-size: 40px;
+    }
+
+    .footer__tagline{
+        font-size: 24px;
+    }
+
+    .footer__section-title{
+        font-size: 22px;
+    }
+
+    .footer__section-list-container{
+        font-size: 20px;
+    }
 }
+
+@media screen and (min-width: 2200px){
+    .footer__container{
+        padding: 0 400px;
+    }
+
+    .footer__brand{
+        font-size: 46px;
+    }
+
+    .footer__tagline{
+        font-size: 30px;
+    }
+
+    .footer__section-title{
+        font-size: 28px;
+    }
+
+    .footer__section-list-container{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 2500px){
+
+    .footer__container{
+        padding: 0 530px;
+    }
+}
+
+@media screen and (min-width: 2800px){
+
+    .footer__container{
+        padding: 0 650px;
+    }
+}
+
