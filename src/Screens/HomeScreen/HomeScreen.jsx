@@ -1,7 +1,6 @@
 import Hero from '../../Components/Hero/Hero'
 import Header from '../../Components/Header/Header'
 import OurProducts from '../../Components/OurProducts/OurProducts'
-import "../ScreenStyles/ScreenStyles.css"
 import Footer from '../../Components/Footer/Footer'
 import AboutUs from '../../Components/AboutUs/AboutUs'
 import Combos from '../../Components/Combos/Combos'

@@ -1,25 +1,22 @@
 import { Link } from "react-router-dom"
-import "./ProductList.css"
+import styles from "./ProductList.module.css"
 
 function ProductCard({products}) {
 
-
-
-
     return (
-      <div className="product-card__container">
+      <div className={styles.container}>
         {
           products.map(product =>(
-          <Link to={"/producto/" + product.id} className="product_link" key={product.id} >
-              <div className="product-card__content">
-                <div className="product-card__img">
+          <Link to={"/producto/" + product.id} className={styles.link} key={product.id} >
+              <div className={styles.content}>
+                <div className={styles.image}>
                   <img src={product.img} alt={product.name} />
                 </div>
-                <div className="product-card__title"> 
+                <div className={styles.title}> 
                   <p>
                     {product.name}
                   </p>
-                  <span>
+                  <span className={styles.price}>
                     ${product.price}
                   </span>
                 </div>  

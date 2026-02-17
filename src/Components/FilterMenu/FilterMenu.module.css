@@ -1,10 +1,10 @@
-.filter-menu__container{
+.container{
     display: flex;
     flex-direction: column;
     width: 200px;
 }
 
-.filter-menu__title{
+.title{
     font-size: 30px;
     font-weight: 700;
     color: #102239;
@@ -13,17 +13,17 @@
 }
 
 
-.filter-menu__categories-container{
+.categories{
     display: flex;
     flex-direction: column;
 }
 
-.checkbox-category{ 
+.checkbox{ 
     accent-color: #3773cb;
     cursor: pointer;
 }
 
-.filter-menu__subtitle{
+.subtitle{
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -31,7 +31,7 @@
     margin: 0 0 15px;
 }
 
-.filter-menu__category{
+.category{
     display: flex;
     gap: 10px;
     margin: 0 0 8px;
@@ -39,7 +39,7 @@
     font-size: 15px;
 }
 
-.filter-menu__price-range-containar{
+.range{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -50,14 +50,14 @@
     margin: 20px 0 10px;
 }
 
-.filter-menu__price-range-slide{
+.slide{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
 }
 
-.filter-menu__slider{
+.slider{
     -webkit-appearance: none;
     height: 8px;
     border-radius: 10px;
@@ -65,11 +65,11 @@
     background: #3773cb
 }
 
-.filter-menu__slider::-webkit-slider-runnable-track {
+.slider::-webkit-slider-runnable-track {
     height: 6px;
 }
 
-.filter-menu__slider::-webkit-slider-thumb {
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 18px;
     height: 18px;

@@ -1,37 +1,36 @@
-import "./FilterMenu.css"
+import styles from "./FilterMenu.module.css"
 import filterList from "../../data/filterData"
-import productList from "../../data/productsData"
 
 function FilterMenu({selectedCategories, handleCategoryChange, handlePriceChange, value, maxPrice}) {
 
 
     return (
-        <div className="filter-menu__container">
-            <span className="filter-menu__title">
+        <div className={styles.container}>
+            <span className={styles.title}>
                 Filtros
             </span>
-            <div className="filter-menu__categories-container">
-                <span className="filter-menu__subtitle">
+            <div className={styles.categories}>
+                <span className={styles-subtitle}>
                     CATEGORIAS
                 </span>
                 {
                     filterList.map(filter => (
-                        <label className="filter-menu__category" key={filter}>
-                            <input type="checkbox" value={filter.toLowerCase()} checked={selectedCategories.includes(filter.toLowerCase())} onChange={handleCategoryChange} className="checkbox-category"/>
+                        <label className={styles.category} key={filter}>
+                            <input type="checkbox" value={filter.toLowerCase()} checked={selectedCategories.includes(filter.toLowerCase())} onChange={handleCategoryChange} className={styles.checkbox}/>
                             {filter}
                         </label>
                     ))
                 }
             </div>
-            <div className="filter-menu__price-range-containar">
+            <div className={styles.range}>
                 <span>
                     RANGO DE PRECIO
                 </span>
-                <div className="filter-menu__price-range-slide">
+                <div className={styles.slide}>
                     <span>
                         $0
                     </span>
-                    <input type="range" min={0} max={maxPrice} step={5} value={value}  onChange={handlePriceChange} className="filter-menu__slider"/>
+                    <input type="range" min={0} max={maxPrice} step={5} value={value}  onChange={handlePriceChange} className={styles.slider}/>
                     <output>
                         ${value}
                     </output>

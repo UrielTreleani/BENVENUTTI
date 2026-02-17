@@ -2,7 +2,7 @@ import productList from "../../data/productsData"
 import FilterMenu from "../FilterMenu/FilterMenu"
 import ProductList from "../ProductList/ProductList"
 import { useState } from "react"
-import "./Menu.css"
+import styles from "./Menu.module.css"
 
 
 
@@ -44,11 +44,11 @@ const filteredProducts =
       )
 
   return (
-    <div className="menu__container">
-      <div className="menu__filter-container">
+    <div className={styles.container}>
+      <div className={styles.filter}>
         <FilterMenu selectedCategories={selectedCategories} handleCategoryChange={handleCategoryChange} handlePriceChange={handlePriceChange} value={value} maxPrice={maxPrice}/>
       </div>
-      <div className="menu__list">
+      <div className={styles.list}>
         <span>
           Mostrando {filteredProducts.length} de {productList.length}
         </span>

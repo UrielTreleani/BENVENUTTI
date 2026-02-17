@@ -3,7 +3,6 @@ import Footer from '../../Components/Footer/Footer'
 import { useParams } from 'react-router-dom'
 import productList from '../../data/productsData'
 import "./ProductScreen.css"
-import "../ScreenStyles/ScreenStyles.css"
 import { useState } from 'react'
 
 function ProductScreen() {

@@ -1,12 +1,14 @@
-import "./Combos.css"
+import styles from "./Combos.module.css"
 
 function Combos() {
   return (
-    <div className="combos__container">
-        <h2 className="combos__title">
-            Combos
-        </h2>
-    </div>
+    <section className={styles.container}>
+      <div className="layout-container">
+          <h2 className={styles.title}>
+              Combos
+          </h2>
+      </div>
+    </section>
   )
 }
 

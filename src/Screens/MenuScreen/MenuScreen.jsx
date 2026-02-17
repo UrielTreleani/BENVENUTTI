@@ -1,6 +1,5 @@
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
-import "../ScreenStyles/ScreenStyles.css"
 import productList from '../../data/productsData'
 import Menu from '../../Components/Menu/Menu'
 import "./MenuScreen.css"

@@ -2,10 +2,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 
-*{
+body {
+    font-family: var(--font-body);
+    color: var(--color-text-dark);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Nunito", sans-serif;
-    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: var(--font-body);
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.layout-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--padding-horizontal);
+    }
+
+:root {
+    --color-primary: #003d89;
+    --color-primary-dark: #002f6b;
+    --color-text-dark: #102139;
+    --color-text-secondary: #5c6b7a;
+    --color-border: #cfd8e5;
+    --font-title: "Playfair", serif;
+    --font-body: "Nunito", sans-serif;
+    --padding-horizontal: clamp(16px, 6vw, 32px);
 }

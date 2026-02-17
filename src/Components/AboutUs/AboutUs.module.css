@@ -1,0 +1,17 @@
+.container {
+  padding: 16px 0;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 36px);
+}
+
+.description {
+  font-size: clamp(12px, 3vw, 18px);
+  max-width: 600px;
+  margin: 12px auto 0;
+  text-align: justify ;
+}

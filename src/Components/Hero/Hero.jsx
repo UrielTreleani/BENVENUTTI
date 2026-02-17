@@ -1,21 +1,21 @@
-import "./Hero.css"
+import styles from "./Hero.module.css"
 
 function Hero() {
   return (
-    <div className="hero-container">
-        <div className="hero__content">
-            <div className="hero__titles-container">
-                    <h2 className="hero__title">
+    <div className={styles.container}>
+        <div className={`layout-container ${styles.content}`}>
+            <div className={styles.titles}>
+                    <h2 className={styles.title}>
                         Sabores que te hacen sonreír
                     </h2>
-                    <p className="hero__description"> 
+                    <p className={styles.description}> 
                         Helados, ensaladas de fruta, panes caseros y mucho mas.
                     </p>
-                    <button>
+                    <button className={styles.button}>
                         Explorar sabores
                     </button>
             </div>
-            <div className="hero__image-container">
+            <div className={styles.imageBox}>
                 <img src="/hero-img.png" alt="helado"/>
             </div>
         </div>
