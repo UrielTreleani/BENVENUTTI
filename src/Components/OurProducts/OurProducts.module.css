@@ -1,19 +1,26 @@
 .header{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
-  margin-bottom: 20px;  
+  margin: 40px 0;  
   text-align: center;
 }
 
-.title{
+.titles{
   margin: 18px 0 10px;
+}
+
+.title h2{
+  margin: 0;
 }
 
 .subtitle{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
+  width: 100%;
 }
 
 .button{
@@ -22,10 +29,12 @@
   padding: 10px 10px;
   border-radius: 12px;
   font-weight: 400;
+  max-width: 500px;
+  width: 100%;
 }
 
 .cards{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }

@@ -1,6 +1,6 @@
 .container {
-  padding: 16px 0;
   text-align: center;
+  margin: 40px 0;
 }
 
 .title {
@@ -10,8 +10,13 @@
 }
 
 .description {
+  display: flex;
+  justify-content: center;
   font-size: clamp(12px, 3vw, 18px);
-  max-width: 600px;
-  margin: 12px auto 0;
+  width: 100%;
+}
+
+.description p{
+  max-width: clamp(500px, 49vw, 1000px);
   text-align: justify ;
 }

@@ -7,9 +7,11 @@ function AboutUs() {
           <h2 className={styles.title}>
               Nosotros
           </h2>
-          <p className={styles.description}>
-              Somos un negocio que hacemos todo con amor, y creemos que no hay mayor acto de amar que servirle comida al otro. Por lo cual  acá en Benvenutti trabajamos con la primera calidad siempre, para traer a tu mesa lo mejor de la gastronomía.
-          </p>
+          <div className={styles.description}>
+            <p>
+                Somos un negocio que hacemos todo con amor, y creemos que no hay mayor acto de amar que servirle comida al otro. Por lo cual  acá en Benvenutti trabajamos con la primera calidad siempre, para traer a tu mesa lo mejor de la gastronomía.
+            </p>
+          </div>
       </div>
     </section>
   )

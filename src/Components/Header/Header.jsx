@@ -5,7 +5,7 @@ function Header() {
 
     return (
         <header className={styles.container}>
-            <div className="layout-container">
+            <div className={`${styles.content} layout-container`}>
                 <div className={styles.links}>
                     <Link to="/" className={styles.brand}>
                         <div className={styles.logo}>

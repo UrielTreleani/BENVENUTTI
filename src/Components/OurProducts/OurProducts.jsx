@@ -11,13 +11,15 @@ function OurProducts() {
     <div className={styles.container} id="products">
         <div className="layout-container">
             <div className={styles.header}>
-                <h2 className={styles.title}>
-                    Nuestros Productos
-                </h2>
-                <div className={styles.subtitle}>
+                <div className={styles.title}>
+                    <h2 >
+                        Nuestros Productos
+                    </h2>
                     <span>
                         Nuestros productos mas vendidos
                     </span>
+                </div>
+                <div className={styles.subtitle}>
                     <Link to={"/menu"} className={styles.button}>Ver todo el menú</Link>
                 </div>
             </div>
