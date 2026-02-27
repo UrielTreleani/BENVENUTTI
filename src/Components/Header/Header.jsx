@@ -14,7 +14,7 @@ function Header() {
                         <span>Benvenutti</span>
                     </Link>
                     <button className={styles.hamburger} aria-label="Abrir menú">
-                    <i class="bi bi-list"></i>
+                    <i className="bi bi-list"></i>
                     </button>
                 </div>
                 <div className={styles.search_bar}>
@@ -28,16 +28,15 @@ function Header() {
                     </button>
                 </div>
                 <nav className={styles.nav}>
-                    <div>
+                    <div className={styles.anchors}>
                         <a href="#products">Productos</a>
                         <a href="#combos">Combos</a>
                         <a href="#about-us">Nosotros</a>
                         <a href="#contact">Contacto</a>
-                    </div>
                     <Link to="/carrito" className={styles.button}>
                         <i className="bi bi-cart"></i>
-                        <span>Carrito</span>
                     </Link>
+                    </div>
                 </nav>
             </div>
         </header>

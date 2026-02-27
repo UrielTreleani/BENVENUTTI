@@ -8,24 +8,24 @@ function OurProducts() {
     const filteredProducts = productList.filter(product => (product.category?.includes("destacado")))
 
         return (
-    <div className={styles.container} id="products">
-        <div className="layout-container">
-            <div className={styles.header}>
-                <div className={styles.title}>
-                    <h2 >
-                        Nuestros Productos
-                    </h2>
-                    <span>
-                        Nuestros productos mas vendidos
-                    </span>
+    <div id="products">
+        <div className={`${styles.container} layout-container`}>
+                <div className={styles.header}>
+                    <div className={styles.title}>
+                        <h2 >
+                            Nuestros Productos
+                        </h2>
+                        <span>
+                            Nuestros productos mas vendidos
+                        </span>
+                    </div>
+                    <div className={styles.subtitle}>
+                        <Link to={"/menu"} className={styles.button}>Ver todo el menú</Link>
+                    </div>
                 </div>
-                <div className={styles.subtitle}>
-                    <Link to={"/menu"} className={styles.button}>Ver todo el menú</Link>
+                <div className={styles.cards}>
+                    <ProductList products={filteredProducts}/>
                 </div>
-            </div>
-            <div className={styles.cards}>
-                <ProductList products={filteredProducts}/>
-            </div>
         </div>
     </div>
     )

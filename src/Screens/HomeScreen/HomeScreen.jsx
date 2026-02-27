@@ -8,7 +8,7 @@ import Combos from '../../Components/Combos/Combos'
 function HomeScreen() {
   return (
     <div>
-        <div className='screen__header'>
+        <div>
             <Header/>
         </div>
         <div>

@@ -6,10 +6,9 @@
   padding: var(--padding-horizontal) 0;
 }
 
-content {
+.content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   align-items: center;
   text-align: center;
 }
@@ -25,7 +24,7 @@ content {
 .title{
   font-family: var(--font-title);
   font-weight: 800;
-  font-size: clamp(40px, 3vw, 72px);
+  font-size: 40px;
   color: var(--color-text-dark);
   margin: 0;
   text-align: center;  
@@ -35,7 +34,7 @@ content {
   font-size: clamp(12px, 3vw, 18px);
   color: var(--color-text-secondary);
   margin: 0;
-  text-align: justify;
+  text-align: center;
 }
 
 .button{
@@ -44,27 +43,47 @@ content {
   padding: 10px 20px;
   border-radius: 12px;
   font-weight: 600;
-  max-width: clamp(500px, 49vw, 1000px);
+  max-width: 500px;
   width: 100%;
 }
 
 .imageBox{
   display: flex;
   justify-content: center;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 .imageBox img {
   width: 100%;
-  max-width: 500px;
-  max-height: 500px;
   border-radius: 24px;
   object-fit: cover;
 }
 
-@media screen and (min-width: 768px){
-      .content {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
+@media screen and (min-width: 1024px){
+    .content {
+      max-width: 1000px;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .imageBox{
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .titles{
+    justify-content: center;
+    max-width: 400px;
+  }
+
+  .title{
+    font-size: 62px;
+  }
+
+  .button{
+    max-width: 100%;
   }
 }
+

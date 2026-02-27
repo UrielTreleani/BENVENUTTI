@@ -10,7 +10,7 @@ function FilterMenu({selectedCategories, handleCategoryChange, handlePriceChange
                 Filtros
             </span>
             <div className={styles.categories}>
-                <span className={styles-subtitle}>
+                <span className={styles.subtitle}>
                     CATEGORIAS
                 </span>
                 {

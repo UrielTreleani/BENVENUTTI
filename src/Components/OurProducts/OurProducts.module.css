@@ -1,3 +1,15 @@
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.content{
+
+}
+
 .header{
   display: flex;
   flex-direction: column;
@@ -5,10 +17,7 @@
   gap: 8px;
   margin: 40px 0;  
   text-align: center;
-}
-
-.titles{
-  margin: 18px 0 10px;
+  width: 100%;
 }
 
 .title h2{
@@ -37,4 +46,23 @@
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+@media screen and (min-width: 1024px){
+  .content{
+    max-width: clamp(500px, 80vw, 1000px);
+  }
+
+  .header{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .subtitle{
+    width: fit-content;
+  }
+
+  .button{
+    width: fit-content;
+  }
 }
