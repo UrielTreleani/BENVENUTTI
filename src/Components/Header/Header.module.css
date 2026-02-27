@@ -99,7 +99,7 @@
 
   .content{
     flex-direction: row;
-    max-width: clamp(500px, 90vw, 1000px);
+    max-width: clamp(500px, 90vw, 1100px);
     width: 100%;
   }
 

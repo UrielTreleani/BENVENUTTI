@@ -19,7 +19,7 @@ function OurProducts() {
                             Nuestros productos mas vendidos
                         </span>
                     </div>
-                    <div className={styles.subtitle}>
+                    <div className={styles.buttonBox}>
                         <Link to={"/menu"} className={styles.button}>Ver todo el menú</Link>
                     </div>
                 </div>

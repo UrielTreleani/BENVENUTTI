@@ -3,7 +3,7 @@ import styles from "./AboutUs.module.css"
 function AboutUs() {
   return (
     <section className={styles.container} id="about-us">
-      <div className="layout-container">
+      <div className={`${styles.content} layout-container`}>
           <h2 className={styles.title}>
               Nosotros
           </h2>

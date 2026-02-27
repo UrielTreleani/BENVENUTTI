@@ -18,8 +18,8 @@ function Footer() {
             <div className={styles.section}>
                 <span className={styles.title}>
                     MENÚ
-                    <i class="bi bi-chevron-down"></i>
                 </span>
+                <i className={`${styles.icon} bi bi-chevron-down`}></i>
                 <div className={styles.list}>
                     <span>
                         Ensaladas de fruta
@@ -38,8 +38,8 @@ function Footer() {
             <div className={styles.section}>
                 <span className={styles.title}>
                     ZONAS DE ENTREGA
-                    <i class="bi bi-chevron-down"></i>
                 </span>
+                <i className={`${styles.icon} bi bi-chevron-down`}></i>
                 <div className={styles.list}>
                     <span>
                         Merlo
@@ -52,15 +52,15 @@ function Footer() {
             <div className={styles.section}>
                 <span className={styles.title}>
                     CONTACTO
-                    <i class="bi bi-chevron-down"></i>
                 </span>
+                <i className={`${styles.icon} bi bi-chevron-down`}></i>
                 <div className={styles.list}>
                     <span>
                         <a href={"https://wa.me/5491122634984?text=" + mensajeWhatsapp} target="_blank" className={styles.whatsapp}>
-                        <i className="bi bi-whatsapp"></i>
                             WhatsApp: +5491122634984
                         </a>
                     </span>
+                    <i className={`${styles.icon} bi bi-chevron-down`}></i>
                     <span>
                         Email: benvenutti3010@gmail.com
                     </span>
