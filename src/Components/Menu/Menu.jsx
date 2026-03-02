@@ -1,24 +1,24 @@
 import productList from "../../data/productsData"
 import FilterMenu from "../FilterMenu/FilterMenu"
 import ProductList from "../ProductList/ProductList"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import styles from "./Menu.module.css"
-
+import MobileFilterContext from "../../Contexts/MobileFilterContext/MobileFilterContext"
 
 
 function Menu() {
 
-    const maxPrice = Math.max(
-        ...productList.map(product => product.price)
-    )
+  const {isOpen, toggleMenu} = useContext(MobileFilterContext)
 
+  const maxPrice = Math.max(
+    ...productList.map(product => product.price)
+  )
 
   const [value, setValue] = useState(maxPrice)
 
-    const handlePriceChange = (event)=>{
-        setValue(event.target.value)
-    }
-
+  const handlePriceChange = (event) => {
+    setValue(event.target.value)
+  }
 
   const [selectedCategories, setSelectedCategories] = useState([])
 
@@ -32,21 +32,29 @@ function Menu() {
     )
   }
 
-const filteredProducts =
-  selectedCategories.length === 0
-    ? productList.filter(product => product.price <= value)
-    : productList.filter(product =>
+  const filteredProducts =
+    selectedCategories.length === 0
+      ? productList.filter(product => product.price <= value)
+      : productList.filter(product =>
         product.category.some(category =>
           selectedCategories.includes(category.toLowerCase())
-        &&
-        product.price <= value
+          &&
+          product.price <= value
         )
       )
+
+      console.log(isOpen)
 
   return (
     <div className={styles.container}>
       <div className={styles.filter}>
-        <FilterMenu selectedCategories={selectedCategories} handleCategoryChange={handleCategoryChange} handlePriceChange={handlePriceChange} value={value} maxPrice={maxPrice}/>
+        <div>
+          <button onClick={toggleMenu}>
+            Filtros
+            <i className="bi bi-funnel-fill"></i>
+          </button>
+        </div>
+        <FilterMenu selectedCategories={selectedCategories} handleCategoryChange={handleCategoryChange} handlePriceChange={handlePriceChange} value={value} maxPrice={maxPrice} isOpen={isOpen} toggleMenu={toggleMenu}/>
       </div>
       <div className={styles.list}>
         <span>

@@ -1,14 +1,15 @@
 import styles from "./FilterMenu.module.css"
 import filterList from "../../data/filterData"
 
-function FilterMenu({selectedCategories, handleCategoryChange, handlePriceChange, value, maxPrice}) {
-
+function FilterMenu({selectedCategories, handleCategoryChange, handlePriceChange, value, maxPrice, isOpen, toggleMenu}) {
 
     return (
-        <div className={styles.container}>
-            <span className={styles.title}>
-                Filtros
-            </span>
+        <div className={isOpen ? `${styles.container} ${styles.open}` : styles.container}>
+            <div className={styles.titleBox}>
+                <span className={styles.title}>
+                    Filtros
+                </span>
+            </div>
             <div className={styles.categories}>
                 <span className={styles.subtitle}>
                     CATEGORIAS
