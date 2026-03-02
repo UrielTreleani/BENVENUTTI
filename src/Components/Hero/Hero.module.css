@@ -6,7 +6,7 @@
       #ffffff,
       rgba(0, 86, 214, 0.2));
   padding: var(--padding-horizontal) 0;
-  height: clamp(640px, 90vh, 1100px);
+  height: clamp(700px, 90vh, 1100px);
 }
 
 .content {
