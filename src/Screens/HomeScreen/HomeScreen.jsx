@@ -11,7 +11,7 @@ function HomeScreen() {
         <div>
             <Header/>
         </div>
-        <div>
+        <div className='home'>
             <Hero/>
         </div>
         <div>

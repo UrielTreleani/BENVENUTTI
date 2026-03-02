@@ -1,9 +1,12 @@
 .container {
+  display: flex;
+  align-items: center;
   background: linear-gradient(to bottom right,
       rgba(240, 244, 255, 0.3),
       #ffffff,
       rgba(0, 86, 214, 0.2));
   padding: var(--padding-horizontal) 0;
+  height: 100%;
 }
 
 .content {
@@ -11,7 +14,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 450px;
 }
 
 .titles{
@@ -20,12 +22,13 @@
   align-items: center;
   gap: 8px;
   margin: 0 0 20px;
+  width: 100%;
 }
 
 .title{
   font-family: var(--font-title);
   font-weight: 800;
-  font-size: 32px;
+  font-size: 40px;
   color: var(--color-text-dark);
   margin: 0;
 }
@@ -50,8 +53,8 @@
 .imageBox{
   display: flex;
   justify-content: center;
-  max-width: 450px;
-  max-height: 450px;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 .imageBox img {
@@ -79,6 +82,11 @@
 
   .button{
     max-width: 100%;
+  }
+
+  .imageBox{
+    max-width: 450px;
+    max-height: 450px;
   }
 }
 

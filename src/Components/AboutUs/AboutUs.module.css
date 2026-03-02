@@ -4,7 +4,10 @@
 }
 
 .content{
-  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .title {
@@ -18,6 +21,7 @@
   justify-content: center;
   font-size: clamp(12px, 3vw, 18px);
   width: 100%;
+  max-width: 500px;
 }
 
 .description p{
@@ -31,11 +35,13 @@
   }
 
   .title{
+    width: 100%;
     text-align: start;
     margin: 40px 0;
   }
 
   .description{
+    max-width: 100%;
     justify-content: flex-start;
   }
 
