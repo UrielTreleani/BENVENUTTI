@@ -8,10 +8,6 @@
     scroll-behavior: smooth;
 }
 
-.home{
-    height: 92vh;
-}
-
 body {
     font-family: var(--font-body);
     color: var(--color-text-dark);
