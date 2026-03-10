@@ -1,7 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .filter{
     width: 100%;
+    max-width: 500px;
 }
 
 .list{
     margin: 0 0 40px;
+    max-width: 500px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 1100px;
+        gap: 40px;
+        position: relative;
+    }
+
+    .list{
+        max-width: 100%;
+    }
+
+    .filter{
+        position: sticky;
+        top: 40px;
+        display: flex;
+        max-width: fit-content;
+        margin: 0 0 40px;
+    }
+
+    .boxButton{
+        display: none;
+    }
 }

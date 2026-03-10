@@ -46,15 +46,17 @@ function Menu() {
       console.log(isOpen)
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} layout-container`}>
       <div className={styles.filter}>
-        <div>
+        <div className={styles.boxButton}>
           <button onClick={toggleMenu}>
             Filtros
             <i className="bi bi-funnel-fill"></i>
           </button>
         </div>
-        <FilterMenu selectedCategories={selectedCategories} handleCategoryChange={handleCategoryChange} handlePriceChange={handlePriceChange} value={value} maxPrice={maxPrice} isOpen={isOpen} toggleMenu={toggleMenu}/>
+        <div className={styles.filterBox}>
+          <FilterMenu selectedCategories={selectedCategories} handleCategoryChange={handleCategoryChange} handlePriceChange={handlePriceChange} value={value} maxPrice={maxPrice} isOpen={isOpen}/>
+        </div>
       </div>
       <div className={styles.list}>
         <span>

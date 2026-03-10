@@ -1,7 +1,7 @@
 import styles from "./FilterMenu.module.css"
 import filterList from "../../data/filterData"
 
-function FilterMenu({selectedCategories, handleCategoryChange, handlePriceChange, value, maxPrice, isOpen, toggleMenu}) {
+function FilterMenu({selectedCategories, handleCategoryChange, handlePriceChange, value, maxPrice, isOpen}) {
 
     return (
         <div className={isOpen ? `${styles.container} ${styles.open}` : styles.container}>

@@ -3,10 +3,11 @@
     flex-direction: column;
     z-index: 8;
     position: absolute;
-    transform: translateY(-170%);
+    transform: translateY(-200%);
     transition: transform 0.3s ease, opacity 0.3s ease;
     background-color: white;
     width: 90%;
+    max-width: 500px;
     margin: 0 0 20px;
 }
 
@@ -98,4 +99,17 @@
     border-radius: 50%;
     cursor: pointer;
     margin-top: -6px;
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        transform: translateX(0px);
+        padding: 20px 30px;
+        position: static;
+        bottom: 0px;
+        border: 1px black solid;
+        border-radius: 18px;
+        width: 300px;
+        margin: 0;
+    }
 }
