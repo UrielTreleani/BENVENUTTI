@@ -2,7 +2,7 @@ import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
 import { useParams } from 'react-router-dom'
 import productList from '../../data/productsData'
-import "./ProductScreen.css"
+import styles from "./ProductScreen.module.css"
 import { useState } from 'react'
 
 function ProductScreen() {
@@ -26,34 +26,34 @@ function ProductScreen() {
     const product = productList.find(product => product.id === id_product)
 
     return (
-    <div>
+    <div className={styles.container}>
         <div>
             <Header/>
         </div>
-        <div className='product-screen__container'>
-            <div className='product-screen__product-img-container'>
+        <div className={styles.content}>
+            <div className={styles.imageBox}>
                 <img src={product.img} alt={product.name} />
             </div>
-            <div className='product-screen__content'>
+            <div className={styles.product}>
                 <div>
-                    <div className='product-screen__product-name-container'>
-                        <span className='product-screen__product-name'>
+                    <div className={styles.titleBox}>
+                        <span className={styles.title}>
                             {product.name}
                         </span>
-                        <span className='product-screen__product-price'>
+                        <span className={styles.price}>
                             ${product.price}
                         </span>
                     </div>
-                    <div className='product-screen__product-description product-screen__content-padding-border'>
-                        <span className='product-screen__product-description-title'>
+                    <div className={styles.descriptionBox}>
+                        <span className={styles.descriptionTitle}>
                             Descripción
                         </span>
-                        <p className='product-screen__product-description'>
+                        <p className={styles.description}>
                             {product.description}   
                         </p>
                     </div>
                 </div>
-                <div className='product-screen__purchase product-screen__content-padding-border'>
+                <div className={styles.pucharse}>
                     <div className='product-screen__product-quantity-container'>
                         <span className='product-screen__product-quantity-title'>
                             Cantidad
